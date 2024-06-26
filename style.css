@@ -73,6 +73,7 @@ nav .nav-links a.selected{
 
 .about,
 .about h2,
+.about h4,
 .about p {
     background-color: #222;
 }
@@ -171,6 +172,9 @@ nav .nav-links a.selected{
     border-radius: 5px;
 
 }
+.blog {
+    background-color: #222;
+}
 
 .recent .posts .post-item h3,
 .content .post-list .post-item h3{
@@ -250,7 +254,7 @@ nav .nav-links a.selected{
 
 .featured .item .details .item-info h4,
 .works-list .item .details .item-info h4{
-    color: #8695a4;
+    color: #645020;
     font-size: 18px;
 }
 
@@ -309,7 +313,7 @@ footer p{
 }
 
 .content .work-info .category{
-    color: #8695a4;
+    color: #645020;
     font-size: 18px;
 }
 
@@ -392,10 +396,20 @@ footer p{
     text-align: justify;
 }
 
-.content .container .about .email{
+.content .container .about .back{
     font-weight: bold;
+    background-color: #222;
     margin-top: 30px;
     font-size: 14px;
+}
+
+.back a{
+    transition: color 0.3s ease;
+}
+
+.back a:hover,
+.back a.selected{
+    color: #fbc850;
 }
 
 @media screen and (max-width: 1400px) {
@@ -527,6 +541,7 @@ footer p{
     .recent .posts .post-item .info h5,
     .content .post-list .post-item .info h5{
         font-size: 14px;
+        background-color: #222;
     }
 
     .recent .posts .post-item p{
